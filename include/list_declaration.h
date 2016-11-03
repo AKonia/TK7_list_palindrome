@@ -4,7 +4,7 @@
 template<typename ListDataType>
 class List
 {
-private:
+protected:
     struct Node
     {
         ListDataType value;

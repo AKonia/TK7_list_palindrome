@@ -1,22 +1,14 @@
-#include "ListExtented.hpp"
+#include "Stack.h"
 #include <iostream>
 int main()
 {
-	List<int> mylist;
-	for(int i = 0; i < 10; i++)
-	{
-    	mylist.push(i);
-    	mylist.push(i);
+	Stack<int> stk;
+	for(int i = 0; i < 15; i++)
+		stk.push(i);
+	while(!stk.isEmpty())
+	{	
+		std::cout << stk.top() << " ";
+		stk.pop();	
 	}
-	mylist.push(4);
-	for(int i = 0; i < mylist.getSize(); i++)
-		std::cout << mylist[i] << " -> ";
-	removeDuplicates(mylist);
-    	mylist.removeElem(7);
-	mylist.removeElem(3);
-	List<int> listCopy(mylist);	
-	std::cout << std::endl << std::endl;
-    for(int i = 0; i < listCopy.getSize(); i++)
-		std::cout << listCopy[i] << " -> ";
 	return 0;
 }
