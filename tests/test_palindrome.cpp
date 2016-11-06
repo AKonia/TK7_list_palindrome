@@ -1,4 +1,4 @@
-#include "ListExtented.hpp"
+#include "ListExtented.h"
 #include <gtest.h>
 
 TEST(ListPalindrome, correct_answer_on_empty_list__is_palindrome)

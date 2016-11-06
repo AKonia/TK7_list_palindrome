@@ -1,5 +1,5 @@
-#include "List.hpp"
-#ifndef LISTS_EXTENTED_HPP
+#include "List.h"
+#ifndef LISTS_EXTENTED_H
 #define LISTS_EXTENTED_HPP
 
 template<typename ListDataType>
@@ -27,4 +27,4 @@ bool isListPalindrome(List<ListDataType> &source)
 	return true;
 }
 
-#endif // LISTS_EXTENTION_HPP
+#endif // LISTS_EXTENTION_H

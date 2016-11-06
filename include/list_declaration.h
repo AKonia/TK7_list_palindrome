@@ -1,5 +1,5 @@
-#ifndef LIST_DECLARATION_HPP
-#define LIST_DECLARATION_HPP
+#ifndef LIST_DECLARATION_H
+#define LIST_DECLARATION_H
 
 template<typename ListDataType>
 class List
@@ -28,4 +28,4 @@ public:
 
 
 };
-#endif // LIST_DECLARATION_HPP
+#endif // LIST_DECLARATION_H

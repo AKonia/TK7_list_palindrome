@@ -1,6 +1,6 @@
 set(target "gtest")
 
-add_library(../lib/${target} STATIC gtest-all.cc)
+add_library(${target} STATIC gtest-all.cc)
 
 if((${CMAKE_CXX_COMPILER_ID} MATCHES "GNU" OR
     ${CMAKE_CXX_COMPILER_ID} MATCHES "Clang") AND
@@ -8,4 +8,4 @@ if((${CMAKE_CXX_COMPILER_ID} MATCHES "GNU" OR
     set(pthread "-pthread")
 endif()
 
-target_link_libraries(../lib/${target} ${pthread})
+target_link_libraries(${target} ${pthread})
